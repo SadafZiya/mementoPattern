@@ -6,14 +6,16 @@ class Buttons extends Component {
         this.state = {
             buttonName: '',
             disable: false,
-            onClick: ()=>{}
+            id: 0,
+            onClick: () => {
+            }
         };
     }
 
     load = () => {
-        let {buttonName, disable, onClick} = this.state
+        let {buttonName, id, disable, onClick} = this.state
         return (
-            <button disabled={disable} onClick={onClick}>{buttonName}</button>
+            <button id={id} disabled={disable} onClick={onClick}>{buttonName}</button>
         );
     }
 

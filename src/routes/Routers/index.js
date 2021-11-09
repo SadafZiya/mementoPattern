@@ -6,7 +6,8 @@ import {
     Switch,
 } from "react-router-dom";
 import Loading from "../../microComponent/Loading";
-import Editor from "../../component/Editor";
+import OriginatorOne from "../../component/Editor/OriginatorOne";
+import OriginatorTwo from "../../component/Editor/OriginatorTwo";
 
 const Routers = () => {
     return (
@@ -14,11 +15,12 @@ const Routers = () => {
             <MainLayout>
                 <Suspense fallback={<Loading/>}>
                     <Switch>
-                        <Route exact path="/" component={Editor}/>
-                        <Route path="/editor" component={Editor}/>
+                        <Route exact path="/" component={OriginatorOne}/>
+                        <Route path="/OriginatorTwo" component={OriginatorTwo}/>
+                        <Route path="/OriginatorOne" component={OriginatorOne}/>
 
                         <Route path="*">
-                            <Redirect to={'/editor'}/>
+                            <Redirect to={'/'}/>
                         </Route>
                     </Switch>
                 </Suspense>

@@ -1,4 +1,3 @@
-import React from 'react';
 import Buttons from "./index";
 
 class ForwardBtn extends Buttons {

@@ -7,7 +7,6 @@ import './index.css'
 import './all.css'
 
 console.log = process.env.NODE_ENV!=='development'?()=>{}: console.log;
-alert = process.env.NODE_ENV!=='development'?()=>{}: alert;
 
 
 ReactDOM.render( <App /> , document.getElementById('root'));
