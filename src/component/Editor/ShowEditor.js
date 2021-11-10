@@ -11,7 +11,7 @@ class ShowEditor extends Component {
         console.log(editorName)
         return (
             <div>
-                <h1>{editorName}</h1>
+                {/*<h1>{editorName}</h1>*/}
                 {/*<BackwardBtn stateName={editorName}/>*/}
                 <BackwardBtn editorName={editorName}/>
                 <br/>

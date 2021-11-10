@@ -42,7 +42,7 @@ class Editor extends Component {
     render() {
         return (
             <div>
-                <textarea  value={this.state.editContent}
+                <textarea rows={10} value={this.state.editContent}
                           onChange={(e) => this.setContentEditorToStateManager(e.target.value)}/>
             </div>
         );
